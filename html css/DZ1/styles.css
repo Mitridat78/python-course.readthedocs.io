@@ -18,6 +18,8 @@ body {
     padding-right: 55px;
     padding-top: 25px;
     padding-bottom: 55px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .text-block > p { /* отступы внутри блока для р*/
     padding-left: 120px;
@@ -46,6 +48,8 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
+    background-size: cover; /*сохраняем пропорции*/
+    background-position: center;
 }
 .section-problem {
     background-color: #EEEEEE;
@@ -55,6 +59,8 @@ body {
 }
 .section-blue {
     background: url("image1.png") center no-repeat;
+    background-size: cover; /*сохраняем пропорции*/
+    background-position: center;
 }
 a:visited { /* всі посилання робимо білими */
     color: white;
