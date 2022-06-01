@@ -60,7 +60,7 @@ body {
 .section-blue {
     background: url("image1.png") center no-repeat;
     background-size: cover; /*сохраняем пропорции*/
-    background-position: center;
+    background-position: center center;
 }
 a:visited { /* всі посилання робимо білими */
     color: white;
