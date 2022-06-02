@@ -11,19 +11,12 @@ body {
     top: 0;
 }
 .text-block {
-    width: 100%;
+    box-sizing: border-box;
     max-width: 1219px;
-    margin: auto;
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-top: 25px;
-    padding-bottom: 55px;
     margin-left: auto;
     margin-right: auto;
-}
-.text-block > p { /* отступы внутри блока для р*/
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 .menu  { /* класс меню */
     color: white;
@@ -49,18 +42,30 @@ body {
     padding-bottom: 50px;
     text-align: center;
     background-size: cover; /*сохраняем пропорции*/
-    background-position: center;
+    background-position: center center;
 }
 .section-problem {
     background-color: #EEEEEE;
 }
 .section-problem > .text-block {
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 .section-blue {
     background: url("image1.png") center no-repeat;
     background-size: cover; /*сохраняем пропорции*/
     background-position: center center;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.text-block-blue {
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #fff;
 }
 a:visited { /* всі посилання робимо білими */
     color: white;
@@ -81,38 +86,21 @@ h2 {
     font-family: sans-serif;
     text-align: center;
 }
-.text-block > .text-block-blue {/* блок внутри синего блока */
-    color: white;
-    text-align: center;
-    font-style: italic;
-    padding-top: 50px; /* задаем отступы согласно макета "на глаз" визуально*/
-    padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
-    font-size: 30px;
-}
 .section-introducing {
     background-color: #FFFFFF;
 }
 .ppc-logo {
     float: left;
-    margin-top: 120px;
-}
-.text-block-introducing {
-    padding-bottom: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
 }
 .team {
     background-color: #EEEEEE;
 }
-.text-block-team {
-    display: flex; /* размещаем в 2 ряда фото команды */
+.text-block-team {/* размещаем в 2 ряда фото команды */
+    display: flex; 
     flex-wrap: wrap;
 }
-.text-block-team > figure {
-    margin-left: 130px; /* ровняем фото внутри фигуры */
-    margin-right: 10px;
+.text-block-team > figure { /* ровняем фото внутри фигуры */
+    margin-left: 9%;
     text-align: center;
 }
 /*чтобы выровнять каждую фотку внутри 
@@ -134,26 +122,19 @@ h2 {
     color: #FFFFFF;
     text-align: center;
     font-size: 20px;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-top: 50px;
     padding-bottom: 50px;
+    /*position: absolute;*/
+}
+#anchor3 {
+    padding-top: 20px;
 }
 @media screen and (max-width: 600px) { 
-    /* если ширина обозревателя 600px шириной или меньше */
-    .block-footer {
-        font-size: 15px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
     .text-block-team > figure {
         margin-left: 30px; /* ровняем фото внутри фигуры */
         margin-right: 30px;
         text-align: center;
     }
-    .text-block > h2 {
-        display: flex; /* размещаем в 2 ряда фото команды */
-        flex-wrap: wrap;
-  }
+}
